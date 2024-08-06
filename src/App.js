@@ -14,13 +14,11 @@ function App() {
   }, [selectedYear]);
 
   return (
-    <div className='app-container'>
       <div className="App">
         <h1>Indian Cities Temperature Chart</h1>
         <YearPicker selectedYear={selectedYear} onYearChange={setSelectedYear} />
         {temperatureData && <Chart data={temperatureData} />}
       </div>
-    </div>
   );
 }
 
